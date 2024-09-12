@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <p>Please complete the form below to download your free guide.</p>
+        <p>Fields marked with a * are required.</p>
+        <label for="first_name">First name*:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+    
+        <label for="last_name">Last name*:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+    
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="confirm_email">Confirm email*:</label>
+        <input type="email" id="confirm_email" name="confirm_email" required><br><br>
+    
+        <label for="company">Company*:</label>
+        <input type="text" id="company" name="company" required><br><br>
+    
+        <label for="job_title">Job title*:</label>
+        <input type="text" id="job_title" name="job_title" required><br><br>
+
+        Gender: <input type="radio"name="Gender">Male 
+                <input type="radio"name="Gender">Female<br><br>
+
+        <label for="country">Choose Country*:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="CA">Canada</option>
+            <!-- Add more countries as needed -->
+        </select><br><br>
+    
+        <input type="submit" value="Submit your enquiry">
+    </form>
+</body>
+</html>
